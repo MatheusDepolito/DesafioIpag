@@ -1,0 +1,20 @@
+{
+  "name": "desafio-ipag",
+  "version": "1.0.0",
+  "description": "Desafios para o processo seletivo para Desenvolvedor Junior na empresa iPag",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusDepolito/DesafioIpag.git"
+  },
+  "author": "Matheus Depolito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusDepolito/DesafioIpag/issues"
+  },
+  "homepage": "https://github.com/MatheusDepolito/DesafioIpag#readme"
+}
