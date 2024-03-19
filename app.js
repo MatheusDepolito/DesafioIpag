@@ -3,10 +3,12 @@ import MaiorMenor from './2. Maior e Menor entre Três Números/MaiorMenor.js';
 import AreaFormasGeometricas from './3. Área de Formas Geométricas/AreaFormasGeometricas.js';
 import JogoDaAdivinhacao from './4. Jogo da Adivinhação/JogodaAdivinhacao.js'
 import ValidadorSenha from './5. Validador de Senha/validadorSenha.js   '
-import { ListaTarefas, Tarefa, Prioridade, StatusTarefa, AppListaTarefas } from './6. Lista de Tarefas/ListaTarefas.js'
+import AppListaTarefas from './6. Lista de Tarefas/AppTarefa.js'
+import AppTvControle from './7. Manipulação e Comunicação de Objetos/AppTvControle.js'
+import EstatisticasVendas from './8. Estatísticas de Vendas/estatisticasVendas.js'
+import AppSF from './9. Simulador de Financiamento/AppSF.js'
 
-
-const condicao = 6;
+const condicao = 9;
 
 if(condicao === 1) {
     let calculadora = new Calculadora();
@@ -34,27 +36,25 @@ if( condicao === 5) {
 }
 
 if( condicao === 6) {
-    /*
-    const lista = new ListaTarefas();
-    lista.adicionarTarefa('Fazer compras', 2, 'pendente');
-    lista.adicionarTarefa('Limpar a casa', 2, 2);
-    lista.adicionarTarefa('Estudar JavaScript', 3, 3);
-
-    lista.visualizarTarefas(); // Mostra todas as tarefas
-    console.log('--- ordernar por prioridade agora');
-
-    lista.ordenarTarefasPorPrioridade(); // Ordena as tarefas por prioridade
-    lista.visualizarTarefas(); // Mostra as tarefas após a ordenação
-        console.log('--- editar tarefa id 2');
-
-    lista.editarTarefa(2, 'Fazer compras de mercado', Prioridade.Maxima); // Edita a segunda tarefa
-    lista.visualizarTarefas(); // Mostra as tarefas após a edição
-    console.log('--- remover tarefa id 1');
-
-    lista.removerTarefa(1); // Remove a primeira tarefa
-    lista.visualizarTarefas(); // Mostra as tarefas após a remoção
-    */
-   
    const app = new AppListaTarefas();
    app.execAppListaTarefas();
+}
+
+if( condicao === 7) {
+    const app = new AppTvControle();
+    app.execApp();
+}
+
+if( condicao === 8 ) {
+
+    const est = new EstatisticasVendas("./8. Estatísticas de Vendas/sales.csv");
+    await est.pegaDadosArquivo();
+    //est.calcularEstatisticasPorTipoProduto();
+    //est.calcularEstatisticasPorTipoProdutoERegiao();
+    est.calcularTipoProdutoMaiorReceitaPorPais();
+}
+
+if( condicao === 9 ) {
+    const appsf = new AppSF();
+    appsf.execAppSimuladorFinanciamento();
 }

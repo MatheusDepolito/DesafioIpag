@@ -5,7 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start2": ""
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/MatheusDepolito/DesafioIpag/issues"
   },
-  "homepage": "https://github.com/MatheusDepolito/DesafioIpag#readme"
+  "homepage": "https://github.com/MatheusDepolito/DesafioIpag#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security"
+  }
 }
