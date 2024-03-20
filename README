@@ -1,0 +1,19 @@
+# Atividades
+
+## Atividades de 1 a 9
+
+Para testar as atividades de 1 a 9, siga as instruções abaixo:
+
+1. Acesse o diretório "Do 1 ao 9" no terminal.
+2. Execute o comando `npm install` para instalar as dependências necessárias.
+3. Altere o valor da variável `condicao` no arquivo `app.js` para o número da atividade que deseja testar.
+4. Execute o comando `node app` para rodar o programa e testar a atividade escolhida.
+
+## Atividade 10
+
+Para testar a atividade 10, que envolve uma interface React, siga as instruções abaixo:
+
+1. Acesse o diretório correspondente à atividade 10 no terminal.
+2. Execute o comando `npm install` para instalar as dependências necessárias para o projeto.
+3. Após a instalação, execute o comando `npm start` para iniciar a aplicação React.
+4. Acesse a interface no navegador para interagir com a aplicação e testar as funcionalidades implementadas.
